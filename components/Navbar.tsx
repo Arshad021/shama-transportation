@@ -19,7 +19,6 @@ export default function Navbar() {
     'wedding-limousine',
     'prom-limousine',
     'night-out-ride-limousine',
-    'business-van',
     'casino-limousine',
     'bachelor-parties-limousine',
   ]
