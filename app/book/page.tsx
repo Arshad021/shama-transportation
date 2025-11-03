@@ -46,7 +46,7 @@ export default function Book() {
         <button className="bg-yellow-500 text-black px-6 py-3 rounded font-bold md:col-span-2">Request Quote</button>
         {status && <p className="text-sm md:col-span-2">{status}</p>}
       </form>
-      <p className="text-xs text-gray-500 mt-3">Prefer a call? <a className="underline" href="tel:+18577779500">(857) 777 9500</a> or <a className="underline" href="https://wa.me/18577779500">WhatsApp</a>.</p>
+      <p className="text-xs text-gray-500 mt-3">Prefer a call? <a className="underline" href="tel:+1 (774) 434-2262">+1 (774) 434-2262</a> or <a className="underline" href="https://wa.me/18577779500">WhatsApp</a>.</p>
     </section>
   )
 }

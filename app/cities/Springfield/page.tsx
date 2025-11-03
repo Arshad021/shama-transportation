@@ -11,21 +11,21 @@ export default function BostonPage() {
   return (
     <section className="max-w-7xl mx-auto px-4 py-16 space-y-16">
       <div className="text-center">
-        <h1 className="text-5xl font-extrabold mb-4">New York Limousine Service</h1>
+        <h1 className="text-5xl font-extrabold mb-4">Springfield Limousine Service</h1>
         <p className="text-lg text-gray-600">
-          Premium limo service in New York with airport transfers, corporate rides & more.
+          Premium limo service in Springfield with airport transfers, corporate rides & more.
         </p>
       </div>
 
       <div>
-        <h2 className="text-3xl font-bold mb-8">Available Fleet in New York</h2>
+        <h2 className="text-3xl font-bold mb-8">Available Fleet in Springfield</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {fleet.map((c,i)=>(<FleetCard key={i} {...c} />))}
         </div>
       </div>
 
       <div>
-        <h2 className="text-3xl font-bold mb-8">Book Your Ride in New York</h2>
+        <h2 className="text-3xl font-bold mb-8">Book Your Ride in Springfield</h2>
         <ContactForm />
       </div>
     </section>
