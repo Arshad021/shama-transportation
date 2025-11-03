@@ -82,73 +82,82 @@ export default function Hero() {
 
             <form onSubmit={handleSubmit} className="space-y-4">
 
-              <input
-                type="text"
-                name="name"
-                value={form.name}
-                onChange={handleChange}
-                placeholder="Full Name"
-                className="w-full border border-gray-300 rounded-lg p-3"
-                required
-              />
+  {/* ✅ Name + Phone (2 columns on desktop / 1 on mobile) */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <input
+      type="text"
+      name="name"
+      value={form.name}
+      onChange={handleChange}
+      placeholder="Full Name"
+      className="w-full border border-gray-300 rounded-lg p-3"
+      required
+    />
 
-              <input
-                type="tel"
-                name="phone"
-                value={form.phone}
-                onChange={handleChange}
-                placeholder="Phone Number"
-                className="w-full border border-gray-300 rounded-lg p-3"
-                required
-              />
+    <input
+      type="tel"
+      name="phone"
+      value={form.phone}
+      onChange={handleChange}
+      placeholder="Phone Number"
+      className="w-full border border-gray-300 rounded-lg p-3"
+      required
+    />
+  </div>
 
-              <input
-                type="text"
-                name="pickup"
-                value={form.pickup}
-                onChange={handleChange}
-                placeholder="Pickup Location"
-                className="w-full border border-gray-300 rounded-lg p-3"
-                required
-              />
+  {/* ✅ Pickup + Dropoff */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <input
+      type="text"
+      name="pickup"
+      value={form.pickup}
+      onChange={handleChange}
+      placeholder="Pickup Location"
+      className="w-full border border-gray-300 rounded-lg p-3"
+      required
+    />
 
-              <input
-                type="text"
-                name="dropoff"
-                value={form.dropoff}
-                onChange={handleChange}
-                placeholder="Drop-off Location"
-                className="w-full border border-gray-300 rounded-lg p-3"
-                required
-              />
+    <input
+      type="text"
+      name="dropoff"
+      value={form.dropoff}
+      onChange={handleChange}
+      placeholder="Drop-off Location"
+      className="w-full border border-gray-300 rounded-lg p-3"
+      required
+    />
+  </div>
 
-              {/* ✅ DATE FIELD */}
-              <input
-                type="date"
-                name="date"
-                value={form.date}
-                onChange={handleChange}
-                className="w-full border border-gray-300 rounded-lg p-3"
-                required
-              />
+  {/* ✅ Date + Time */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <input
+      type="date"
+      name="date"
+      value={form.date}
+      onChange={handleChange}
+      className="w-full border border-gray-300 rounded-lg p-3"
+      required
+    />
 
-              {/* ✅ TIME FIELD */}
-              <input
-                type="time"
-                name="time"
-                value={form.time}
-                onChange={handleChange}
-                className="w-full border border-gray-300 rounded-lg p-3"
-                required
-              />
+    <input
+      type="time"
+      name="time"
+      value={form.time}
+      onChange={handleChange}
+      className="w-full border border-gray-300 rounded-lg p-3"
+      required
+    />
+  </div>
 
-              <button
-                type="submit"
-                className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-3 rounded-lg transition"
-              >
-                Get My Quote
-              </button>
-            </form>
+  {/* ✅ Submit button */}
+  <button
+    type="submit"
+    className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-3 rounded-lg transition"
+  >
+    Get My Quote
+  </button>
+</form>
+
 
             <p className="text-sm text-center mt-3 text-gray-500">
               We’ll respond within minutes!
