@@ -1,6 +1,16 @@
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  images: { domains: ["www.fastwheelslimo.com", "via.placeholder.com"] }
-};
-module.exports = nextConfig;
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.fastwheelslimo.com',
+        port: '',
+        pathname: '/wp-content/uploads/**',
+      },
+    ],
+  },
+}
+
+module.exports = nextConfig

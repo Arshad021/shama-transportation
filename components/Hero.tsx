@@ -26,13 +26,11 @@ export default function Hero() {
     <section className="relative w-full bg-black pt-24 pb-24 md:pt-32 md:pb-32 overflow-hidden">
 
       {/* ✅ Background Image */}
-      <Image
-        src="https://www.fastwheelslimo.com/wp-content/uploads/2024/07/banner3.png"
-        alt="Hero Background"
-        fill
-        className="object-cover opacity-60 -z-10"
-        priority
-      />
+      <img
+  src="https://www.fastwheelslimo.com/wp-content/uploads/2024/07/banner3.png"
+  className="absolute inset-0 w-full h-full object-cover opacity-60"
+  alt="Hero"
+/>
 
       {/* ✅ Main Content (NO ABSOLUTE → better responsive layout) */}
       <div className="relative z-20 flex items-center justify-center px-4">
