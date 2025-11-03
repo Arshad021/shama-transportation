@@ -150,12 +150,12 @@ export default function Hero() {
   </div>
 
   {/* ✅ Submit button */}
-  <button
-    type="submit"
-    className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-3 rounded-lg transition"
-  >
-    Get My Quote
-  </button>
+  <Link
+  href="/quote"
+  className="block w-full text-center bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-3 rounded-lg transition"
+>
+  Get My Quote
+</Link>
 </form>
 
 
