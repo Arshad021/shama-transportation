@@ -9,6 +9,8 @@ export default function Hero() {
     phone: '',
     pickup: '',
     dropoff: '',
+    date: '',
+    time: '',
   })
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -17,7 +19,7 @@ export default function Hero() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    window.location.href = '/quote' // redirects to your existing quote page
+    window.location.href = '/quote'
   }
 
   return (
@@ -31,7 +33,8 @@ export default function Hero() {
 
       <div className="absolute inset-0 flex items-center justify-center px-4">
         <div className="max-w-7xl w-full mx-auto grid md:grid-cols-2 gap-10 items-center text-white">
-          {/* --- Left Side: Hero Content --- */}
+          
+          {/* LEFT SIDE */}
           <div>
             <p className="uppercase tracking-widest text-yellow-400 font-semibold">
               Affordable & Reliable Chauffeur Service
@@ -41,8 +44,7 @@ export default function Hero() {
               <br className="hidden md:block" /> Needs
             </h1>
             <p className="mt-5 text-lg max-w-2xl text-gray-100">
-              Local, family-owned. Fixed-price rates. No hidden fees. Available
-              24/7 across Boston & New England.
+              Local, family-owned. Fixed-price rates. No hidden fees.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4 items-center">
@@ -67,12 +69,14 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* --- Right Side: Quote Form --- */}
+          {/* RIGHT SIDE FORM */}
           <div className="bg-white text-black rounded-2xl shadow-2xl p-6 md:p-8 backdrop-blur-sm bg-opacity-95">
             <h2 className="text-2xl font-bold mb-4 text-center text-yellow-600">
               Get an Instant Quote
             </h2>
+
             <form onSubmit={handleSubmit} className="space-y-4">
+
               <input
                 type="text"
                 name="name"
@@ -82,6 +86,7 @@ export default function Hero() {
                 className="w-full border border-gray-300 rounded-lg p-3"
                 required
               />
+
               <input
                 type="tel"
                 name="phone"
@@ -91,6 +96,7 @@ export default function Hero() {
                 className="w-full border border-gray-300 rounded-lg p-3"
                 required
               />
+
               <input
                 type="text"
                 name="pickup"
@@ -100,12 +106,33 @@ export default function Hero() {
                 className="w-full border border-gray-300 rounded-lg p-3"
                 required
               />
+
               <input
                 type="text"
                 name="dropoff"
                 value={form.dropoff}
                 onChange={handleChange}
                 placeholder="Drop-off Location"
+                className="w-full border border-gray-300 rounded-lg p-3"
+                required
+              />
+
+              {/* ✅ PICKUP DATE */}
+              <input
+                type="date"
+                name="date"
+                value={form.date}
+                onChange={handleChange}
+                className="w-full border border-gray-300 rounded-lg p-3"
+                required
+              />
+
+              {/* ✅ PICKUP TIME */}
+              <input
+                type="time"
+                name="time"
+                value={form.time}
+                onChange={handleChange}
                 className="w-full border border-gray-300 rounded-lg p-3"
                 required
               />
@@ -117,6 +144,7 @@ export default function Hero() {
                 Get My Quote
               </button>
             </form>
+
             <p className="text-sm text-center mt-3 text-gray-500">
               We’ll respond within minutes!
             </p>
