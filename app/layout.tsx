@@ -1,13 +1,13 @@
-import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import StickyMobileBar from '../components/StickyMobileBar'
-import Script from 'next/script'   // ✅ IMPORTANT
+import Script from 'next/script'
 
 export const metadata = {
   title: 'FastWheel Limo',
-  description: 'Premium limo & chauffeur service'
+  description: 'Premium limo & chauffeur service',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -17,31 +17,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className="min-h-screen flex flex-col pt-16">
 
-        
-    
-
-        {/* ✅ Main Layout Components */}
+        {/* Main Layout Components */}
         <Navbar />
         <main className="flex-1">{children}</main>
         <StickyMobileBar />
         <Footer />
-        {/* ✅ Move this down */}
-        {/* @ts-ignore */}
-{/* <call-us-selector
-  phonesystem-url="https://fastwheels.ma.3cx.us"
-  party="LiveChat561783"
->
-  
-</call-us-selector> */}
 
+        {/* 3CX Widget Script */}
+        <Script
+          src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js"
+          id="tcx-callus-js"
+          strategy="afterInteractive"
+        />
 
-<Script
-  src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js"
-  id="tcx-callus-js"
-  strategy="afterInteractive"
-/>
-{/* ✅ Manual 3CX Initialization (Step 4) */}
-<Script id="init-3cx" strategy="afterInteractive">
+        {/* Manual 3CX Initialization */}
+        <Script id="init-3cx" strategy="afterInteractive">
           {`
             window.addEventListener('load', function() {
               if (window.CallUs && document.querySelector('call-us-selector')) {
@@ -53,6 +43,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             });
           `}
         </Script>
+
+        {/* ✅ Add Speed Insights at the very end */}
+        <SpeedInsights />
 
       </body>
     </html>
