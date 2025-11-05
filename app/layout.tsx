@@ -5,7 +5,6 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import StickyMobileBar from '../components/StickyMobileBar'
 import Script from 'next/script'
-import CallUsSelector from '@/components/CallUsSelector'
 
 export const metadata = {
   title: 'FastWheel Limo',
@@ -18,7 +17,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
-        {/* ✅ PWA Support */}
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#FFD700" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -28,35 +26,40 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
 
       <body className="min-h-screen flex flex-col pt-16">
-        {/* Main Layout Components */}
         <Navbar />
         <main className="flex-1">{children}</main>
         <StickyMobileBar />
         <Footer />
 
-        <CallUsSelector />
-        {/* ✅ 3CX Widget Script */}
+        {/* ✅ 3CX Web Component */}
+        <call-us-selector
+          phonesystem-url="https://fastwheels.ma.3cx.us"
+          party="LiveChat457078"
+        ></call-us-selector>
+
+        {/* ✅ Load 3CX external script */}
         <Script
+          id="3cx-script"
           src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js"
-          id="tcx-callus-js"
           strategy="afterInteractive"
         />
 
-        {/* ✅ Manual 3CX Initialization */}
-        <Script id="init-3cx" strategy="afterInteractive">
+        {/* ✅ Initialize 3CX AFTER script loads */}
+        <Script id="3cx-init" strategy="afterInteractive">
           {`
-            window.addEventListener('load', function() {
+            const init3cx = () => {
               if (window.CallUs && document.querySelector('call-us-selector')) {
-                console.log('3CX widget initializing manually...');
+                console.log("✅ Initializing 3CX widget...");
                 window.CallUs.init();
               } else {
-                console.warn('3CX widget not found or CallUs not ready.');
+                console.warn("⏳ 3CX not ready, retrying...");
+                setTimeout(init3cx, 300);
               }
-            });
+            };
+            init3cx();
           `}
         </Script>
 
-        {/* ✅ Analytics and Speed Insights */}
         <Analytics />
         <SpeedInsights />
       </body>
