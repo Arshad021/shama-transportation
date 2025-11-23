@@ -7,10 +7,10 @@ import StickyMobileBar from '../components/StickyMobileBar'
 import Script from 'next/script'
 
 export const metadata = {
-  title: 'FastWheel Limo',
-  description: 'Premium limo & chauffeur service',
+  title: 'Shama Passenger Transport & Tours',
+  description: 'Reliable passenger transport, airport transfers, corporate travel, and luxury fleet services in UAE.',
   manifest: '/manifest.json',
-  themeColor: '#FFD700',
+  themeColor: '#FEDF23',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -31,22 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <StickyMobileBar />
         <Footer />
 
-       {/* ✅ Tawk.to Chat Widget */}
-<Script id="tawk-to" strategy="afterInteractive">
-  {`
-    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-    (function() {
-      var s1 = document.createElement("script");
-      s1.async = true;
-      s1.src = 'https://embed.tawk.to/60cb56b165b7290ac63679ff/1f8d4l9q8';
-      s1.charset = 'UTF-8';
-      s1.setAttribute('crossorigin', '*');
-      document.head.appendChild(s1);
-    })();
-  `}
-</Script>
-
-
+    
         <Analytics />
         <SpeedInsights />
       </body>

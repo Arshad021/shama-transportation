@@ -1,34 +1,35 @@
-import Image from "next/image"
 import Link from "next/link"
+import { Plane, Building2, CalendarHeart, MapPin } from "lucide-react"
 
 export default function ServicesPreview() {
   const services = [
     {
-      title: "Airport Limousine",
-      slug: "airport-limousine",
-      description: "Reliable and comfortable rides to and from the airport.",
-      image: "https://www.fastwheelslimo.com/wp-content/uploads/2021/06/air.jpg",
+      title: "Airport & Hotel Transfers",
+      slug: "airport-hotel-transfers",
+      description:
+        "Fast, reliable airport and hotel transfers — ensuring your guests and clients arrive comfortably and on time.",
+      icon: Plane,
     },
     {
-      title: "Wedding Limousine",
-      slug: "wedding-limousine",
+      title: "Corporate & Company Transport",
+      slug: "corporate-transport",
       description:
-        "Make your special day unforgettable with our luxury wedding limousines.",
-      image: "https://www.fastwheelslimo.com/wp-content/uploads/2021/06/wedding-limo.jpg",
+        "Professional, punctual transport solutions for business meetings, staff, and corporate events.",
+      icon: Building2,
     },
     {
-      title: "Night Out Ride Limousine",
-      slug: "night-out-ride-limousine",
+      title: "Events, Weddings & Exhibitions",
+      slug: "events-weddings",
       description:
-        "Enjoy your night out in style and safety with our premium rides.",
-      image: "https://www.fastwheelslimo.com/wp-content/uploads/2021/06/pexels-chad-kirchoff-952437.jpg",
+        "Elegant and coordinated rides for weddings, exhibitions, and VIP occasions with premium comfort.",
+      icon: CalendarHeart,
     },
     {
-      title: "Casino Limousine",
-      slug: "casino-limousine",
+      title: "Tours & City Trips",
+      slug: "tours-city-trips",
       description:
-        "Arrive at the casino in style and enjoy a VIP experience all night long.",
-      image: "https://www.fastwheelslimo.com/wp-content/uploads/2021/06/pexels-drew-rae-1871508-1.jpg",
+        "Explore Dubai, Abu Dhabi, and other Emirates with guided, safe, and luxury tour experiences.",
+      icon: MapPin,
     },
   ]
 
@@ -39,45 +40,43 @@ export default function ServicesPreview() {
       </h2>
 
       <div className="flex flex-col gap-20">
-        {services.map((s, index) => (
-          <div
-            key={s.slug}
-            className={`flex flex-col md:flex-row items-center gap-10 ${
-              index % 2 === 1 ? "md:flex-row-reverse" : ""
-            }`}
-          >
-            {/* Image */}
-            <div className="relative w-full md:w-1/2 h-72 rounded-2xl overflow-hidden shadow-lg">
-              <Image
-                src={s.image}
-                alt={s.title}
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-700"
-              />
-            </div>
+        {services.map((s, index) => {
+          const Icon = s.icon
+          return (
+            <div
+              key={s.slug}
+              className={`flex flex-col md:flex-row items-center gap-10 ${
+                index % 2 === 1 ? "md:flex-row-reverse" : ""
+              }`}
+            >
+              {/* Icon Section */}
+              <div className="flex items-center justify-center w-full md:w-1/2 h-72 rounded-2xl bg-gradient-to-br from-[#ea3c3a] to-[#fedf23] shadow-lg">
+                <Icon className="w-24 h-24 text-white" />
+              </div>
 
-            {/* Text */}
-            <div className="md:w-1/2 text-center md:text-left">
-              <h3 className="text-2xl font-bold mb-3 text-gray-900">{s.title}</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">{s.description}</p>
+              {/* Text Section */}
+              <div className="md:w-1/2 text-center md:text-left">
+                <h3 className="text-2xl font-bold mb-3 text-gray-900">{s.title}</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">{s.description}</p>
 
-              <div className="flex justify-center md:justify-start gap-4">
-                <a
-                  href="tel:+17744342262"
-                  className="border border-yellow-500 text-yellow-600 px-6 py-2 rounded-full font-medium hover:bg-yellow-500 hover:text-black transition"
-                >
-                  Call Now
-                </a>
-                <Link
-                  href="/book"
-                  className="bg-yellow-500 text-black px-6 py-2 rounded-full font-medium hover:bg-yellow-600 transition"
-                >
-                  Book Now
-                </Link>
+                <div className="flex justify-center md:justify-start gap-4">
+                  <a
+                    href="tel:+971558840121"
+                    className="border border-[#ea3c3a] text-[#ea3c3a] px-6 py-2 rounded-full font-medium hover:bg-[#ea3c3a] hover:text-white transition"
+                  >
+                    Call Now
+                  </a>
+                  <Link
+                    href="/book"
+                    className="bg-[#fedf23] text-black px-6 py-2 rounded-full font-medium hover:bg-[#f5d912] transition"
+                  >
+                    Book Now
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          )
+        })}
       </div>
     </section>
   )
