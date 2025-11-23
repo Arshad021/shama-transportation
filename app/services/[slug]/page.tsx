@@ -1,5 +1,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import Link from 'next/link'
+import React from 'react'
 import Script from "next/script";
 
 const SITE = "https://shamapassengertransport.com";
