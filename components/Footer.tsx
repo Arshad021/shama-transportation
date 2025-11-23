@@ -33,9 +33,9 @@ export default function Footer() {
           <ul className="space-y-2 text-gray-400">
             <li><Link href="/book" className="hover:text-yellow-400">Book a Ride</Link></li>
             <li><Link href="/services" className="hover:text-yellow-400">Our Services</Link></li>
-            <li><Link href="/fleet" className="hover:text-yellow-400">Fleet</Link></li>
+            <li><Link href="/fleets" className="hover:text-yellow-400">Fleets</Link></li>
             <li><Link href="/about" className="hover:text-yellow-400">About Us</Link></li>
-            <li><Link href="/contact" classClassName="hover:text-yellow-400">Contact</Link></li>
+            <li><Link href="/contact" className="hover:text-yellow-400">Contact</Link></li>
           </ul>
         </div>
 
