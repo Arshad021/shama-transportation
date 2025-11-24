@@ -13,28 +13,28 @@ export default function FleetPreview() {
     {
       title: '12 Seater Minibus / Toyota Hiace',
       desc: 'Spacious minibus option ideal for small groups, family trips and corporate transfers.',
-      image: '/images/TOYOTA HIACE 12 SEATER.jpg', // add later
+      image: '/images/TOYOTA_HIACE_12_SEATER-removebg-preview.png', // add later
       pax: 12,
       luggage: 10,
     },
     {
       title: '22 Seater Minibus / Toyota Coaster',
       desc: 'Comfortable mid‑sized group vehicle for tours, staff pickups and event transport.',
-      image: '/images/TOYOTA COASTER 22 SEATER.jpg', // add later
+      image: '/images/TOYOTA_COASTER_22_SEATER-removebg-preview.png', // add later
       pax: 22,
       luggage: 20,
     },
     {
       title: '35 Seater Luxury Bus',
       desc: 'Luxury coach for large groups, tours, airport transfers, and corporate events.',
-      image: '', // add later
+      image: '/images/35_SEATER_LUXURY_BUS-removebg-preview (1).png', // add later
       pax: 35,
       luggage: 30,
     },
     {
       title: '50 Seater Luxury Bus',
       desc: 'Top of the line coach for big events, group outings & high‑capacity transfers across the UAE.',
-      image: '', // add later
+      image: '/images/50-Seater-Luxury-Bus (1).png', // add later
       pax: 50,
       luggage: 40,
     },

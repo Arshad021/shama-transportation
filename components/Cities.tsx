@@ -6,21 +6,25 @@ export default function Cities() {
       name: "Dubai",
       slug: "dubai",
       img: "/images/Desert Safari Tour.jpg",
+      url: "/tours/dubai-city-tour", // link to Dubai tour page
     },
     {
       name: "Abu Dhabi",
       slug: "abu-dhabi",
       img: "/images/Abu Dhabi City Tour.jpg",
+      url: "/tours/abu-dhabi-city-tour", // link to Abu Dhabi tour page
     },
     {
       name: "Sharjah",
       slug: "sharjah",
-      img: "https://images.unsplash.com/photo-1587899896079-060b8d6ef4e4?q=80&w=1740&auto=format&fit=crop",
+      img: "https://media.assettype.com/gulfnews%2F2025-09-11%2F59rcty80%2Fgulfnews2025-06-107mcsw5o3SanojSaseendranSharjahBuhuairahCornichepleasantweather.avif?w=640&auto=format%2Ccompress&fit=max",
+      url: "/tours/sharjah", // link to Sharjah city page
     },
     {
       name: "Ajman",
       slug: "ajman",
-      img: "https://images.unsplash.com/photo-1623319484055-6f4f1d9aeb7a?q=80&w=1740&auto=format&fit=crop",
+      img: "https://thetouristsworld.com/wp-content/uploads/2021/09/Things-To-Do-In-Ajman.jpg",
+      url: "/tours/ajman", // link to Ajman city page
     },
   ];
 
@@ -39,7 +43,7 @@ export default function Cities() {
             comfortable, safe, and on time.
           </p>
 
-          <Link href="/locations">
+          <Link href="/tours">
             <button className="bg-white text-black font-semibold px-5 py-3 rounded-lg hover:bg-[#fedf23] hover:text-black transition w-full md:w-auto">
               View All Locations
             </button>
@@ -49,7 +53,7 @@ export default function Cities() {
         {/* ✅ City Cards */}
         <div className="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-6">
           {cities.map((c, i) => (
-            <Link key={i} href={`/cities/${c.slug}`} className="block">
+            <Link key={i} href={c.url} className="block">
               <div className="relative rounded-2xl overflow-hidden shadow-lg group h-56 sm:h-64">
                 <img
                   src={c.img}

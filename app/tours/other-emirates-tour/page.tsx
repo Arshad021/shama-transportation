@@ -2,9 +2,27 @@ import FleetCard from "@/components/FleetCard"
 import ContactForm from "@/components/ContactForm"
 
 const fleet = [
-  { title: 'Executive Sedan Class', desc: 'Perfect for a smooth transfer to any emirate, offering comfort and elegance.', image: '', pax:3, luggage:3 },
-  { title: 'First Class Sedan', desc: 'Enjoy premium luxury and additional in-car amenities for longer routes.', image: '', pax:3, luggage:3 },
-  { title: 'SUV Executive', desc: 'Ideal for families or groups traveling across emirates with spacious comfort.', image: '', pax:6, luggage:4 },
+  {
+    title: '7‑Seater Van / Kia Sedona',
+    desc: 'Ideal for small groups and family tours in Ajman.',
+    image: '/images/KIA_7_SEATER-removebg-preview.png',
+    pax: 7,
+    luggage: 4
+  },
+  {
+    title: 'Executive Sedan',
+    desc: 'Luxury sedan for business or couple travellers seeking premium comfort.',
+    image: '/images/TOYOTA 7 SEATER.png',
+    pax: 3,
+    luggage: 3
+  },
+  {
+    title: '22‑Seater Minibus / Toyota Coaster',
+    desc: 'Perfect for larger groups, corporate travel, and city tours in Ajman.',
+    image: '/images/TOYOTA_COASTER_22_SEATER-removebg-preview.png',
+    pax: 22,
+    luggage: 20
+  }
 ]
 
 export default function OtherEmiratesTourPage() {
@@ -65,10 +83,14 @@ export default function OtherEmiratesTourPage() {
             </ul>
           </div>
 
-          {/* IMAGE PLACEHOLDER */}
-          <div className="w-full h-80 bg-gray-200 rounded-2xl flex items-center justify-center text-gray-500 text-xl">
-            Image Here
-          </div>
+          {/* IMAGE SECTION */}
+<div className="w-full h-80 rounded-2xl overflow-hidden shadow-lg">
+  <img
+    src="https://thetouristsworld.com/wp-content/uploads/2021/09/34.jpg"
+    alt="Ajman Tour"
+    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+  />
+</div>
         </div>
 
         {/* Fleet Section */}

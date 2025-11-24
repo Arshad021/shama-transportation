@@ -6,22 +6,22 @@ import ContactForm from "@/components/ContactForm"
 const fleet = [
   {
     title: '7‑Seater Van / Kia Sedona',
-    desc: 'Ideal for airport pick‑ups and small‑group city tours in Abu Dhabi.',
-    image: '',
+    desc: 'Ideal for small groups and family tours in Ajman.',
+    image: '/images/KIA_7_SEATER-removebg-preview.png',
     pax: 7,
-    luggage: 5
+    luggage: 4
   },
   {
     title: 'Executive Sedan',
     desc: 'Luxury sedan for business or couple travellers seeking premium comfort.',
-    image: '',
+    image: '/images/TOYOTA 7 SEATER.png',
     pax: 3,
     luggage: 3
   },
   {
     title: '22‑Seater Minibus / Toyota Coaster',
-    desc: 'Spacious mid‑sized minibus ideal for tours, staff transfers and group travel.',
-    image: '',
+    desc: 'Perfect for larger groups, corporate travel, and city tours in Ajman.',
+    image: '/images/TOYOTA_COASTER_22_SEATER-removebg-preview.png',
     pax: 22,
     luggage: 20
   }
@@ -32,11 +32,23 @@ export default function AbuDhabiCityTourPage() {
     <section className="max-w-7xl mx-auto px-4 py-16 space-y-16">
 
       {/* Hero Banner */}
-      <div className="relative rounded-2xl overflow-hidden h-[400px] mb-12 bg-gray-100 flex items-center justify-center">
-        <h1 className="text-5xl md:text-6xl font-extrabold text-gray-800 text-center px-4">
-          Abu Dhabi City Tour
-        </h1>
-      </div>
+<div className="relative rounded-2xl overflow-hidden h-[400px] mb-12 flex items-center justify-center text-center">
+  
+  {/* Background Image */}
+  <img
+    src="/images/Abu Dhabi City Tour.jpg"
+    alt="Abu Dhabi City Tour"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+  
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/10"></div>
+
+  {/* Text */}
+  <h1 className="relative text-5xl md:text-6xl font-extrabold text-black px-4">
+    Abu Dhabi City Tour
+  </h1>
+</div>
 
       {/* Overview + Included/Excluded Section */}
       <div className="grid md:grid-cols-2 gap-12 text-gray-700">

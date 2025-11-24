@@ -27,51 +27,41 @@ const fleet = [
   }
 ]
 
-export default function DubaiCityTourPage() {
+export default function AjmanCityTourPage() {
   return (
     <section className="max-w-7xl mx-auto px-4 py-16 space-y-16">
 
       {/* Hero Banner */}
-<div className="relative rounded-2xl overflow-hidden h-[400px] mb-12 flex items-center justify-center text-center">
-  
-  {/* Background Image */}
-  <img
-    src="/images/Desert Safari Tour.jpg"
-    alt="Abu Dhabi City Tour"
-    className="absolute inset-0 w-full h-full object-cover"
-  />
-  
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-black/40"></div>
+      <div className="relative rounded-2xl overflow-hidden h-[400px] mb-12 bg-gray-100 flex items-center justify-center">
+        <h1 className="text-5xl md:text-6xl font-extrabold text-gray-800 text-center px-4">
+          Ajman City Tour
+        </h1>
+      </div>
 
-  {/* Text */}
-  <h1 className="relative text-5xl md:text-6xl font-extrabold text-black px-4">
-    Dubai City Tour
-  </h1>
-</div>
       {/* Overview + Included/Excluded Section */}
       <div className="grid md:grid-cols-2 gap-12 text-gray-700">
         {/* Left Column */}
         <div className="space-y-6">
           <h2 className="text-3xl font-bold">Tour Overview</h2>
           <p>
-            Explore Dubai’s iconic landmarks with Shama Passenger Transport. Visit Burj Khalifa, Dubai Marina, Palm Jumeirah, and other famous attractions with ease and comfort.
+            Discover Ajman’s serene beauty and cultural charm with Shama Passenger Transport. Enjoy a tour that combines beaches, heritage sites, and local attractions for a relaxing and memorable experience.
           </p>
           <p>
-            Enjoy door-to-door pick-ups, professional chauffeurs, modern air-conditioned vehicles, and a seamless experience for both small and large groups.
+            Visit Ajman Corniche, Ajman Museum, local markets, and the scenic waterfront. All trips are in modern, air-conditioned vehicles with professional chauffeurs ensuring a safe, comfortable, and timely journey.
           </p>
         </div>
 
         {/* Right Column */}
         <div className="space-y-6">
           <h2 className="text-3xl font-bold">What’s Included & Excluded</h2>
-          <ul className="list-disc list-inside space-y-2 text-gray-700">
-            <li>Hotel or airport pick-up & drop-off in Dubai</li>
-            <li>Visit to main Dubai attractions and landmarks</li>
+          <ul className="list-disc list-inside space-y-2">
+            <li>Hotel or airport pick‑up & drop‑off in Ajman</li>
+            <li>Visit to Ajman Corniche & Ajman Museum</li>
+            <li>Photo stops at scenic waterfronts and landmarks</li>
             <li>Professional chauffeur, fuel, tolls & parking included</li>
           </ul>
-          <ul className="list-disc list-inside mt-4 space-y-2 text-gray-700">
-            <li><strong>Excluded:</strong> Entry tickets, meals, personal expenses</li>
+          <ul className="list-disc list-inside mt-4 space-y-2">
+            <li><strong>Excluded:</strong> Lunch, optional attraction entry fees</li>
           </ul>
         </div>
       </div>
@@ -86,7 +76,7 @@ export default function DubaiCityTourPage() {
 
       {/* Booking Form Section */}
       <div>
-        <h2 className="text-3xl font-bold mb-8 text-center">Book Your Dubai City Tour</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center">Book Your Tour</h2>
         <ContactForm />
       </div>
 

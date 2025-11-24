@@ -1,23 +1,24 @@
 import Link from "next/link";
 
-export default function KiaSedonaPage() {
+export default function ToyotaHiace15SeaterPage() {
   const vehicle = {
-    title: "7-Seater Van (Kia Sedona)",
+    title: "15-Seater Minibus (Toyota Hiace)",
     description:
-      "Ideal for small groups or family travel, the Kia Sedona offers comfort, space, and premium features to make your journey smooth and enjoyable.",
-    pax: 7,
-    luggage: 4,
+      "Perfect for medium to large groups, staff transport, tours, school runs, and airport transfers. The Toyota Hiace 15-Seater is known for its spacious seating, comfort, and reliable performance.",
+    pax: 15,
+    luggage: 10,
     features: [
-      "Spacious seating for 7 passengers",
-      "Ample luggage capacity",
-      "Air conditioning & premium interior",
-      "Smooth and safe ride",
-      "Ideal for airport transfers, city trips, and events",
+      "Comfortable seating for 15 passengers",
+      "Large rear luggage space",
+      "Dual air-conditioning system",
+      "Smooth suspension for long rides",
+      "Ideal for tours, events, school transport & airport transfers",
+      "Reliable & professional driver included",
     ],
     images: [
-      "/img/fleets/7-seater-sedona-1.jpg",
-      "/img/fleets/7-seater-sedona-2.jpg",
-      "/img/fleets/7-seater-sedona-3.jpg",
+      "/images/TOYOTA_HIACE_15_SEATERR-removebg-preview.png",
+      "/images/TOYOTA_HIACE_15_SEATERR-removebg-preview.png",
+      "/images/TOYOTA_HIACE_15_SEATERR-removebg-preview.png",
     ],
   };
 
@@ -81,10 +82,10 @@ export default function KiaSedonaPage() {
         </div>
       </div>
 
-      {/* CTA Section */}
+      {/* CTA */}
       <div className="text-center mt-12">
         <h3 className="text-2xl font-bold mb-4">
-          Need a different vehicle?
+          Looking for a different vehicle?
         </h3>
         <Link
           href="/fleets"

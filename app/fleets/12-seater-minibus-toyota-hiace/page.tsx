@@ -1,29 +1,30 @@
 import Link from "next/link";
 
-export default function KiaSedonaPage() {
+export default function ToyotaHiace12Page() {
   const vehicle = {
-    title: "7-Seater Van (Kia Sedona)",
+    title: "12-Seater Minibus (Toyota Hiace)",
     description:
-      "Ideal for small groups or family travel, the Kia Sedona offers comfort, space, and premium features to make your journey smooth and enjoyable.",
-    pax: 7,
-    luggage: 4,
+      "A reliable and spacious minibus perfect for airport transfers, corporate travel, tourism groups, and staff transportation across Dubai & UAE.",
+    pax: 12,
+    luggage: 8,
     features: [
-      "Spacious seating for 7 passengers",
-      "Ample luggage capacity",
-      "Air conditioning & premium interior",
-      "Smooth and safe ride",
-      "Ideal for airport transfers, city trips, and events",
+      "Comfortable seating for up to 12 passengers",
+      "Large luggage space",
+      "Powerful AC for UAE weather",
+      "Smooth suspension & safe ride",
+      "Ideal for group transfers, tours, and events",
     ],
     images: [
       "/images/TOYOTA_HIACE_12_SEATER-removebg-preview.png",
-      "/img/fleets/7-seater-sedona-2.jpg",
-      "/img/fleets/7-seater-sedona-3.jpg",
+      "/images/TOYOTA_HIACE_12_SEATER-removebg-preview.png",
+      "/images/TOYOTA_HIACE_12_SEATER-removebg-preview.png",
     ],
   };
 
   return (
     <section className="max-w-7xl mx-auto px-4 py-20">
-      {/* Hero Banner */}
+      
+      {/* HERO BANNER */}
       <div className="relative bg-black text-white rounded-2xl shadow-lg mb-16 h-[350px] flex items-center justify-center text-center overflow-hidden">
         <img
           src={vehicle.images[0]}
@@ -31,7 +32,8 @@ export default function KiaSedonaPage() {
           className="absolute inset-0 w-full h-full object-cover rounded-2xl"
         />
         <div className="absolute inset-0 bg-black/60 rounded-2xl"></div>
-        <div className="relative z-10 px-4">
+
+        <div className="relative z-10 px-6">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
             {vehicle.title}
           </h1>
@@ -41,9 +43,10 @@ export default function KiaSedonaPage() {
         </div>
       </div>
 
-      {/* Vehicle Details */}
+      {/* CONTENT SECTION */}
       <div className="grid md:grid-cols-2 gap-12 items-start mb-16">
-        {/* Left Images */}
+        
+        {/* LEFT SIDE IMAGES */}
         <div className="space-y-4">
           {vehicle.images.map((img, i) => (
             <div key={i} className="rounded-2xl overflow-hidden shadow-lg">
@@ -56,22 +59,24 @@ export default function KiaSedonaPage() {
           ))}
         </div>
 
-        {/* Right Content */}
+        {/* RIGHT SIDE DETAILS */}
         <div className="space-y-6">
           <h2 className="text-3xl font-bold text-gray-900">
             Features & Specifications
           </h2>
+
           <ul className="list-disc pl-6 text-gray-700 space-y-2">
             {vehicle.features.map((feature, i) => (
               <li key={i}>{feature}</li>
             ))}
           </ul>
 
-          <div className="flex justify-start space-x-6 text-gray-700">
+          <div className="flex justify-start space-x-6 text-gray-700 text-lg font-medium">
             <span>👤 Passengers: {vehicle.pax}</span>
             <span>🧳 Luggage: {vehicle.luggage}</span>
           </div>
 
+          {/* BOOK BUTTON */}
           <Link
             href={`/book?vehicle=${encodeURIComponent(vehicle.title)}`}
             className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-3 rounded-lg shadow-lg transition-all duration-300"
@@ -81,10 +86,10 @@ export default function KiaSedonaPage() {
         </div>
       </div>
 
-      {/* CTA Section */}
+      {/* CTA */}
       <div className="text-center mt-12">
         <h3 className="text-2xl font-bold mb-4">
-          Need a different vehicle?
+          Looking for another vehicle?
         </h3>
         <Link
           href="/fleets"

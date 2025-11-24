@@ -4,9 +4,27 @@ import FleetCard from "@/components/FleetCard"
 import ContactForm from "@/components/ContactForm"
 
 const fleet = [
-  { title: "4×4 Land Cruiser", desc: "Perfect for dune bashing and desert adventure.", image: "", pax: 6, luggage: 3 },
-  { title: "Private SUV", desc: "Ideal for couples and families wanting a private safari.", image: "", pax: 4, luggage: 2 },
-  { title: "Luxury Safari Vehicle", desc: "Premium desert experience with upgraded seating.", image: "", pax: 6, luggage: 3 },
+  {
+    title: '7‑Seater Van / Kia Sedona',
+    desc: 'Ideal for small groups and family tours in Ajman.',
+    image: '/images/KIA_7_SEATER-removebg-preview.png',
+    pax: 7,
+    luggage: 4
+  },
+  {
+    title: 'Executive Sedan',
+    desc: 'Luxury sedan for business or couple travellers seeking premium comfort.',
+    image: '/images/TOYOTA 7 SEATER.png',
+    pax: 3,
+    luggage: 3
+  },
+  {
+    title: '22‑Seater Minibus / Toyota Coaster',
+    desc: 'Perfect for larger groups, corporate travel, and city tours in Ajman.',
+    image: '/images/TOYOTA_COASTER_22_SEATER-removebg-preview.png',
+    pax: 22,
+    luggage: 20
+  }
 ]
 
 export default function DesertSafariPage() {

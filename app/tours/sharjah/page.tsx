@@ -27,51 +27,42 @@ const fleet = [
   }
 ]
 
-export default function DubaiCityTourPage() {
+export default function SharjahCityTourPage() {
   return (
     <section className="max-w-7xl mx-auto px-4 py-16 space-y-16">
 
       {/* Hero Banner */}
-<div className="relative rounded-2xl overflow-hidden h-[400px] mb-12 flex items-center justify-center text-center">
-  
-  {/* Background Image */}
-  <img
-    src="/images/Desert Safari Tour.jpg"
-    alt="Abu Dhabi City Tour"
-    className="absolute inset-0 w-full h-full object-cover"
-  />
-  
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-black/40"></div>
+      <div className="relative rounded-2xl overflow-hidden h-[400px] mb-12 bg-gray-100 flex items-center justify-center">
+        <h1 className="text-5xl md:text-6xl font-extrabold text-gray-800 text-center px-4">
+          Sharjah City Tour
+        </h1>
+      </div>
 
-  {/* Text */}
-  <h1 className="relative text-5xl md:text-6xl font-extrabold text-black px-4">
-    Dubai City Tour
-  </h1>
-</div>
       {/* Overview + Included/Excluded Section */}
       <div className="grid md:grid-cols-2 gap-12 text-gray-700">
         {/* Left Column */}
         <div className="space-y-6">
           <h2 className="text-3xl font-bold">Tour Overview</h2>
           <p>
-            Explore Dubai’s iconic landmarks with Shama Passenger Transport. Visit Burj Khalifa, Dubai Marina, Palm Jumeirah, and other famous attractions with ease and comfort.
+            Explore the cultural heart of Sharjah with Shama Passenger Transport. This tour offers a blend of history, art, and modern attractions for a complete city experience.
           </p>
           <p>
-            Enjoy door-to-door pick-ups, professional chauffeurs, modern air-conditioned vehicles, and a seamless experience for both small and large groups.
+            Visit the Sharjah Museum of Islamic Civilization, stroll along the Corniche, admire the Blue Souq, and experience the vibrant local markets. Our modern, air-conditioned vehicles and professional chauffeurs ensure comfort and safety throughout your journey.
           </p>
         </div>
 
         {/* Right Column */}
         <div className="space-y-6">
           <h2 className="text-3xl font-bold">What’s Included & Excluded</h2>
-          <ul className="list-disc list-inside space-y-2 text-gray-700">
-            <li>Hotel or airport pick-up & drop-off in Dubai</li>
-            <li>Visit to main Dubai attractions and landmarks</li>
+          <ul className="list-disc list-inside space-y-2">
+            <li>Hotel or airport pick‑up & drop‑off in Sharjah</li>
+            <li>Visit to Sharjah Museum of Islamic Civilization</li>
+            <li>Photo stops at Sharjah Corniche & Blue Souq</li>
+            <li>Optional visits to local markets and attractions</li>
             <li>Professional chauffeur, fuel, tolls & parking included</li>
           </ul>
-          <ul className="list-disc list-inside mt-4 space-y-2 text-gray-700">
-            <li><strong>Excluded:</strong> Entry tickets, meals, personal expenses</li>
+          <ul className="list-disc list-inside mt-4 space-y-2">
+            <li><strong>Excluded:</strong> Lunch, entry tickets for optional attractions</li>
           </ul>
         </div>
       </div>
@@ -86,7 +77,7 @@ export default function DubaiCityTourPage() {
 
       {/* Booking Form Section */}
       <div>
-        <h2 className="text-3xl font-bold mb-8 text-center">Book Your Dubai City Tour</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center">Book Your Tour</h2>
         <ContactForm />
       </div>
 
