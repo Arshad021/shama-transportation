@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import Link from "next/link";
 import { useState } from "react";
 
@@ -23,35 +23,35 @@ export default function Hero() {
 
   return (
     <section className="relative w-full bg-black pt-24 pb-24 md:pt-32 md:pb-32 overflow-hidden">
-      {/* ✅ Background Image */}
+      {/* Background Image */}
       <img
         src="/images/Banner.jpg"
         className="absolute inset-0 w-full h-full object-cover opacity-60"
         alt="Luxury Transport UAE"
       />
 
-      {/* ✅ Main Content */}
+      {/* Main Content */}
       <div className="relative z-20 flex items-center justify-center px-4">
-        <div className="max-w-7xl w-full mx-auto grid md:grid-cols-2 gap-10 items-center text-white">
+        <div className="max-w-7xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center text-white">
           
-          {/* ✅ LEFT SIDE TEXT */}
-          <div>
+          {/* LEFT SIDE TEXT */}
+          <div className="text-center md:text-left">
             <p className="uppercase tracking-widest bg-gradient-to-r from-[#ea3c3a] to-[#fedf23] bg-clip-text text-transparent font-semibold">
               Premium Transport & Tour Services in UAE
             </p>
-            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mt-3">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mt-3">
               Reliable. Comfortable. <br className="hidden md:block" />
               Affordable Rides <br className="hidden md:block" />
               Across the UAE.
             </h1>
 
-            <p className="mt-5 text-lg max-w-2xl text-gray-100">
+            <p className="mt-5 text-base sm:text-lg max-w-full md:max-w-xl mx-auto md:mx-0 text-gray-100">
               Shama Passenger Transport & Tours offers luxury fleet rentals,
               airport transfers, city tours, and group transport across Dubai,
               Abu Dhabi, Sharjah, and all Emirates.
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-4 items-center">
+            <div className="mt-8 flex flex-col sm:flex-row flex-wrap gap-4 justify-center md:justify-start items-center">
               <Link
                 href="/book"
                 className="bg-gradient-to-r from-[#ea3c3a] to-[#fedf23] text-black px-6 py-3 rounded-lg font-bold hover:opacity-90 transition"
@@ -75,15 +75,14 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* ✅ RIGHT SIDE — QUOTE FORM */}
-          <div className="bg-white text-black rounded-2xl shadow-2xl p-6 md:p-8 bg-opacity-95 backdrop-blur-sm">
+          {/* RIGHT SIDE — QUOTE FORM */}
+          <div className="bg-white text-black rounded-2xl shadow-2xl p-6 md:p-8 bg-opacity-95 backdrop-blur-sm w-full">
             <h2 className="text-2xl font-bold mb-4 text-center bg-gradient-to-r from-[#ea3c3a] to-[#fedf23] bg-clip-text text-transparent">
               Get an Instant Quote
             </h2>
 
             <form onSubmit={handleSubmit} className="space-y-4">
-              {/* ✅ Name + Phone */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <input
                   type="text"
                   name="name"
@@ -104,8 +103,7 @@ export default function Hero() {
                 />
               </div>
 
-              {/* ✅ Pickup + Dropoff */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <input
                   type="text"
                   name="pickup"
@@ -126,8 +124,7 @@ export default function Hero() {
                 />
               </div>
 
-              {/* ✅ Date + Time */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <input
                   type="date"
                   name="date"
@@ -146,7 +143,6 @@ export default function Hero() {
                 />
               </div>
 
-              {/* ✅ Submit */}
               <button
                 type="submit"
                 className="block w-full text-center bg-gradient-to-r from-[#ea3c3a] to-[#fedf23] hover:opacity-90 text-black font-semibold py-3 rounded-lg transition"
