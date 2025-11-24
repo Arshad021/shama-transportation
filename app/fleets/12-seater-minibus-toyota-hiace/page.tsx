@@ -15,7 +15,7 @@ export default function KiaSedonaPage() {
       "Ideal for airport transfers, city trips, and events",
     ],
     images: [
-      "/img/fleets/7-seater-sedona-1.jpg",
+      "/images/TOYOTA_HIACE_12_SEATER-removebg-preview.png",
       "/img/fleets/7-seater-sedona-2.jpg",
       "/img/fleets/7-seater-sedona-3.jpg",
     ],
