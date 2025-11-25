@@ -36,6 +36,11 @@ export default function DesertSafariPage() {
         <h1 className="text-5xl md:text-6xl font-extrabold text-gray-800">
           Private Evening Desert Safari
         </h1>
+        <img
+    src="/images/WhatsApp Image 2025-11-25 at 12.30.57.jpeg"
+    alt="Abu Dhabi City Tour"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
       </div>
 
       {/* Overview + Highlights */}

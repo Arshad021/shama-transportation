@@ -36,7 +36,7 @@ export default function DubaiCityTourPage() {
   
   {/* Background Image */}
   <img
-    src="/images/Desert Safari Tour.jpg"
+    src="/images/WhatsApp Image 2025-11-25 at 12.17.18 (1).jpeg"
     alt="Abu Dhabi City Tour"
     className="absolute inset-0 w-full h-full object-cover"
   />

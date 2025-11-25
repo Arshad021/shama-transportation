@@ -5,7 +5,7 @@ export default function PhoneBar() {
 
         {/* Title */}
         <div className="font-semibold mb-3 sm:mb-0">
-          Your Global Chauffeur Service
+          Your UAE Chauffeur Service
         </div>
 
         {/* Contact Grid */}

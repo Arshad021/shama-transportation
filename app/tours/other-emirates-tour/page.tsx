@@ -86,7 +86,7 @@ export default function OtherEmiratesTourPage() {
           {/* IMAGE SECTION */}
 <div className="w-full h-80 rounded-2xl overflow-hidden shadow-lg">
   <img
-    src="https://thetouristsworld.com/wp-content/uploads/2021/09/34.jpg"
+    src="/images/Other Emirates Tour.jpg"
     alt="Ajman Tour"
     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
   />

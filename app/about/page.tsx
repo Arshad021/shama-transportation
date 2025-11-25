@@ -7,7 +7,7 @@ export default function About() {
       {/* Banner */}
       <div className="relative rounded-2xl mb-16 h-[300px] flex items-center justify-center text-center overflow-hidden">
         <img
-          src="https://www.shamapassengertransport.com/wp-content/uploads/2024/07/shama-banner.jpg"
+          src="/images/WhatsApp Image 2025-11-25 at 12.17.21 (1).jpeg"
           alt="About Shama Passenger Transport"
           className="absolute inset-0 w-full h-full object-cover rounded-2xl"
         />

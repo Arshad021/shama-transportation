@@ -34,7 +34,7 @@ export default function AirportTransportationPage() {
       {/* ===== Banner Section ===== */}
       <div className="relative bg-black text-white rounded-2xl shadow-lg mb-16 h-[350px] flex flex-col items-center justify-center text-center overflow-hidden">
         <img
-          src="https://www.shamapassengertransport.com/wp-content/uploads/2024/05/airport-banner.jpg"
+          src="/images/WhatsApp Image 2025-11-25 at 19.13.14.jpeg"
           alt="Airport Transportation"
           className="absolute inset-0 w-full h-full object-cover rounded-2xl"
         />
@@ -60,7 +60,7 @@ export default function AirportTransportationPage() {
       <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
         <div className="rounded-2xl overflow-hidden shadow-lg">
           <img
-            src="https://www.shamapassengertransport.com/wp-content/uploads/2024/05/airport-transfer.jpg"
+            src="/images/WhatsApp Image 2025-11-25 at 19.13.14.jpeg"
             alt="UAE Airport Transport"
             className="w-full h-full object-cover"
           />
