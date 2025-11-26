@@ -79,19 +79,7 @@ export default function AbuDhabiCityTourPage() {
         </div>
       </div>
 
-      {/* Fleet Section */}
-      <div>
-        <h2 className="text-3xl font-bold mb-8 text-center">Vehicles Available for This Tour</h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          {fleet.map((v, i) => <FleetCard key={i} {...v} />)}
-        </div>
-      </div>
-
-      {/* Booking Form Section */}
-      <div>
-        <h2 className="text-3xl font-bold mb-8 text-center">Book Your Tour</h2>
-        <ContactForm />
-      </div>
+      
 
     </section>
   )

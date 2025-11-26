@@ -93,13 +93,7 @@ export default function OtherEmiratesTourPage() {
 </div>
         </div>
 
-        {/* Fleet Section */}
-        <div id="fleet">
-          <h2 className="text-3xl font-bold mb-8">Available Fleet for Emirates Tour</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {fleet.map((c,i)=>(<FleetCard key={i} {...c} />))}
-          </div>
-        </div>
+        
 
         {/* Booking Form */}
         <div id="book">

@@ -37,7 +37,7 @@ export default function DesertSafariPage() {
           Private Evening Desert Safari
         </h1>
         <img
-    src="/images/WhatsApp Image 2025-11-25 at 12.30.57.jpeg"
+    src="/images/WhatsApp Image 2025-11-26 at 20.15.41.jpeg"
     alt="Abu Dhabi City Tour"
     className="absolute inset-0 w-full h-full object-cover"
   />
@@ -105,15 +105,7 @@ export default function DesertSafariPage() {
         </div>
       </div>
 
-      {/* Fleet Section */}
-      <div>
-        <h2 className="text-3xl font-bold mb-8 text-center">Vehicles Available</h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          {fleet.map((v, i) => (
-            <FleetCard key={i} {...v} />
-          ))}
-        </div>
-      </div>
+      
 
       {/* Booking Form */}
       <div>
