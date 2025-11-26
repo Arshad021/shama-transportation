@@ -6,7 +6,7 @@ const fleet = [
     desc: "Perfect for small groups or family travel in comfort and style.",
     pax: 7,
     luggage: 4,
-    image: "/images/TOYOTA 7 SEATER.png",
+    image: "/images/WhatsApp_Image_2025-11-26_at_7.45.48_PM-removebg-preview.png",
   },
   {
     title: "12-Seater Minibus (Toyota Hiace)",

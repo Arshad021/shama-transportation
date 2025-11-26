@@ -22,7 +22,11 @@ export default function Page() {
       <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
         {/* Left Placeholder Box Instead of Image */}
         <div className="rounded-2xl overflow-hidden shadow-lg bg-gray-200 h-[300px] flex items-center justify-center text-gray-500 text-xl">
-          Image Placeholder
+        <img
+            src="/images/WhatsApp Image 2025-11-25 at 19.13.14.jpeg"
+            alt="UAE Airport Transport"
+            className="w-full h-full object-cover"
+          />
         </div>
 
         {/* Right Content */}

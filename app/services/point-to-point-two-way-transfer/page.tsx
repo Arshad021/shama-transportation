@@ -1,38 +1,65 @@
 import Link from "next/link";
 
-export default function PointToPointTwoWayPage() {
-  const fleets = [
-    { title: "7 Seater Van – Kia Sedona", desc: "Comfortable for small family or group transfers." },
-    { title: "12 Seater Minibus – Toyota Hiace", desc: "Perfect for medium-sized groups and city transfers." },
-    { title: "15 Seater Minibus – Toyota Hiace", desc: "Ideal for slightly larger groups with extra comfort." },
-    { title: "22 Seater Minibus – Toyota Coaster", desc: "Spacious vehicle for group travel across cities." },
-    { title: "35 Seater Luxury Bus", desc: "Luxury coach suitable for corporate or group tours." },
-    { title: "50 Seater Luxury Bus", desc: "Premium bus for large groups and VIP transportation." },
-  ];
+const fleets = [
+  {
+    title: "7 Seater Van – Kia Sedona",
+    desc: "Comfortable for small family or group transfers.",
+    image: "/images/WhatsApp_Image_2025-11-26_at_7.45.48_PM-removebg-preview.png",
+  },
+  {
+    title: "12 Seater Minibus – Toyota Hiace",
+    desc: "Perfect for medium-sized groups and city transfers.",
+    image: "/images/TOYOTA_HIACE_12_SEATER-removebg-preview.png",
+  },
+  {
+    title: "15 Seater Minibus – Toyota Hiace",
+    desc: "Ideal for slightly larger groups with extra comfort.",
+    image: "/images/TOYOTA_HIACE_15_SEATERR-removebg-preview.png",
+  },
+  {
+    title: "22 Seater Minibus – Toyota Coaster",
+    desc: "Spacious vehicle for group travel across cities.",
+    image: "/images/TOYOTA_COASTER_22_SEATER-removebg-preview.png",
+  },
+  {
+    title: "35 Seater Luxury Bus",
+    desc: "Luxury coach suitable for corporate or group tours.",
+    image: "/images/35_SEATER_LUXURY_BUS-removebg-preview (1).png",
+  },
+  {
+    title: "50 Seater Luxury Bus",
+    desc: "Premium bus for large groups and VIP transportation.",
+    image: "/images/50-Seater-Luxury-Bus (1).png",
+  },
+];
 
+export default function PointToPointTwoWayPage() {
   return (
-    <section className="max-w-7xl mx-auto px-4 py-20">
+    <section className="max-w-7xl mx-auto px-4 py-20 space-y-20">
       {/* Hero Banner */}
-      <div className="relative bg-black text-white rounded-2xl shadow-lg mb-16 h-[300px] flex items-center justify-center text-center overflow-hidden">
+      <div className="relative rounded-2xl overflow-hidden h-[300px] md:h-[400px] flex items-center justify-center text-center">
         <img
           src="https://www.fastwheelslimo.com/wp-content/uploads/2021/06/buildings.jpg"
           alt="Two-Way Transfer Service"
-          className="absolute inset-0 w-full h-full object-cover rounded-2xl"
+          className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/60 rounded-2xl"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative z-10 px-4">
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Point-to-Point Two-Way Transfer</h1>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4">
+            Point-to-Point Two-Way Transfer
+          </h1>
+          <p className="text-gray-200 text-sm sm:text-base md:text-lg max-w-2xl mx-auto">
             Enjoy hassle-free two-way transfers with fixed rates, reliable pickups, and luxury vehicles. Perfect for business, airport transfers, or group travel.
           </p>
         </div>
       </div>
 
       {/* 2-Column Section */}
-      <div className="grid md:grid-cols-2 gap-10 items-center mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        {/* Content */}
         <div>
-          <h2 className="text-3xl font-extrabold mb-4">Reliable Two-Way Transfers</h2>
-          <p className="text-gray-600 mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold mb-4">Reliable Two-Way Transfers</h2>
+          <p className="text-gray-700 mb-4">
             Our two-way transfer service ensures smooth round trips with professional chauffeurs and luxury vehicles. Arrive on time for your appointments and return in comfort without any stress.
           </p>
           <ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
@@ -49,6 +76,7 @@ export default function PointToPointTwoWayPage() {
           </Link>
         </div>
 
+        {/* Image */}
         <div>
           <img
             src="https://www.fastwheelslimo.com/wp-content/uploads/2024/07/Luxury-Airport-Transfer-Service-in-Miami-1.jpg"
@@ -59,18 +87,27 @@ export default function PointToPointTwoWayPage() {
       </div>
 
       {/* Fleet Section */}
-      <div className="mb-20">
-        <h2 className="text-3xl font-bold text-center mb-12">Our Fleet for Two-Way Transfers</h2>
-        <div className="grid md:grid-cols-3 gap-8">
+      <div>
+        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
+          Our Fleet for Two-Way Transfers
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {fleets.map((fleet, i) => (
             <div
               key={i}
               className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-transform duration-300"
             >
-              {/* Placeholder Image */}
-              <div className="w-full h-56 bg-gray-200 flex items-center justify-center text-gray-500">
-                Image
+              {/* Vehicle Image */}
+              <div className="w-full h-56 overflow-hidden bg-gray-100">
+                <img
+                  src={fleet.image}
+                  alt={fleet.title}
+                  className="w-full h-full object-contain p-4"
+                />
               </div>
+
+              {/* Card Content */}
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{fleet.title}</h3>
                 <p className="text-gray-600 mb-4">{fleet.desc}</p>

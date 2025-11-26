@@ -6,7 +6,7 @@ export default function FleetPreview() {
     {
       title: '7 Seater Van / Kia Sedona',
       desc: 'Perfect for airport & hotel transfers, sightseeing tours & guest transportation for up to 7 people.',
-      image: '/images/TOYOTA 7 SEATER.png', // add later
+      image: '/images/WhatsApp_Image_2025-11-26_at_7.45.48_PM-removebg-preview.png', // add later
       pax: 7,
       luggage: 5,
     },

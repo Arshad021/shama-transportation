@@ -5,7 +5,7 @@ export default function Cities() {
     {
       name: "Dubai",
       slug: "dubai",
-      img: "/images/Desert Safari Tour.jpg",
+      img: "/images/WhatsApp Image 2025-11-25 at 12.17.18 (1).jpeg",
       url: "/tours/dubai-city-tour", // link to Dubai tour page
     },
     {

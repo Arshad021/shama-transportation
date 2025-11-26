@@ -7,7 +7,7 @@ const fleet = [
   {
     title: '7‑Seater Van / Kia Sedona',
     desc: 'Ideal for small groups and family tours in Ajman.',
-    image: '/images/KIA_7_SEATER-removebg-preview.png',
+    image: '/images/WhatsApp_Image_2025-11-26_at_7.45.48_PM-removebg-preview.png',
     pax: 7,
     luggage: 4
   },
