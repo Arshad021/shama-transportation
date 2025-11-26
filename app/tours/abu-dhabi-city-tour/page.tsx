@@ -42,7 +42,7 @@ export default function AbuDhabiCityTourPage() {
   />
   
   {/* Overlay */}
-  <div className="absolute inset-0 bg-black/10"></div>
+  <div className="absolute inset-0 bg-black/40"></div>
 
   {/* Text */}
   <h1 className="relative text-5xl md:text-6xl font-extrabold text-black px-4">
@@ -79,7 +79,11 @@ export default function AbuDhabiCityTourPage() {
         </div>
       </div>
 
-      
+      {/* Booking Form */}
+      <div>
+        <h2 className="text-3xl font-bold mb-8 text-center">Book Your Desert Safari</h2>
+        <ContactForm />
+      </div>
 
     </section>
   )

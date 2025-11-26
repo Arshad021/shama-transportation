@@ -61,7 +61,7 @@ export default function FleetPreview() {
         {/* View All Button */}
         <div className="text-center mt-10">
           <Link
-            href="/fleet"
+            href="/fleets"
             className="inline-block bg-yellow-500 text-black font-semibold py-3 px-6 rounded-lg hover:bg-yellow-400 transition"
           >
             View All Vehicles

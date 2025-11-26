@@ -21,7 +21,7 @@ export default function Cities() {
       url: "/tours/sharjah", // link to Sharjah city page
     },
     {
-      name: "Ajman",
+      name: "RAK & FUJEIRAH",
       slug: "ajman",
       img: "https://thetouristsworld.com/wp-content/uploads/2021/09/Things-To-Do-In-Ajman.jpg",
       url: "/tours/ajman", // link to Ajman city page
