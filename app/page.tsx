@@ -13,9 +13,10 @@ export default function Home() {
     <>
       <Hero />
       <div className="max-w-7xl mx-auto px-4">
+      <FleetPreview />
         <ServicesPreview />
         <Cities />
-        <FleetPreview />
+      
       </div>
       <SafetySecurity />
       <WhyChoose />
