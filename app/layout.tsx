@@ -31,7 +31,32 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <StickyMobileBar />
         <Footer />
 
-    
+        {/* ✅ WhatsApp Floating Chat Widget */}
+        <Script id="whatsapp-widget" strategy="afterInteractive">
+        {`
+          (function () {
+            var options = {
+              whatsapp: "+971558840121",
+              call_to_action: "Chat with us on WhatsApp",
+              position: "right",
+            };
+            var proto = document.location.protocol,
+              host = "getbutton.io",
+              url = proto + "//static." + host;
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = url + "/widget-send-button/js/init.js";
+            s.onload = function () {
+              WhWidgetSendButton.init(host, proto, options);
+            };
+            var x = document.getElementsByTagName("script")[0];
+            x.parentNode.insertBefore(s, x);
+          })();
+        `}
+        </Script>
+
+        {/* Analytics */}
         <Analytics />
         <SpeedInsights />
       </body>
